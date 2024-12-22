@@ -40,7 +40,7 @@ else ()
 	file(GLOB_RECURSE manager_SOURCES "../../Sources/Manager/*.cpp")
 endif()
 
-find_package(Threads REQUIRED)
+#find_package(Threads REQUIRED)
 
 add_library(${MANAGER} MODULE ${manager_SOURCES})
 
