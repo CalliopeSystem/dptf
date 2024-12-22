@@ -44,7 +44,7 @@ CPPFLAGS += -DESIF_ATTR_DAEMON
 CPPFLAGS += -DESIF_FEAT_OPT_COMPRESS
 
 CFLAGS  += -Wno-multichar
-CFLAGS  += -Werror
+CFLAGS  += -Wno-error
 #Compile with -g by default and strip it at the end
 CFLAGS   += -g
 

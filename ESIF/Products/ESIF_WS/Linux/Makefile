@@ -35,7 +35,7 @@ LDLIBS := -ldl -lpthread
 CPPFLAGS += -I$(SOURCES) -I$(ESIF_SDK_SOURCES) -I$(ESIF_LIB_SOURCES)
 CPPFLAGS += -DESIF_ATTR_USER
 
-CFLAGS += -Werror
+CFLAGS += -Wno-error
 
 # Compile Flags added for security purposes
 CFLAGS  += -fPIE

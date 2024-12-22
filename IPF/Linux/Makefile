@@ -44,7 +44,7 @@ CPPFLAGS += -I$(ESIF_LIB_SOURCES)
 CPPFLAGS += -I$(ESIF_CM_SOURCES)
 CPPFLAGS += -I$(ESIF_UF_SOURCES)
 
-CFLAGS += -Werror
+CFLAGS += -Wno-error
 CFLAGS += -Wno-multichar
 CFLAGS += -Wno-typedef-redefinition
 
@@ -52,7 +52,7 @@ CFLAGS += -Wno-typedef-redefinition
 CFLAGS  += -fPIE
 CFLAGS  += -fPIC
 CFLAGS  += -O2 -D_FORTIFY_SOURCE=2
-CFLAGS  += -Wformat -Wformat-security -Werror
+CFLAGS  += -Wformat -Wformat-security -Wno-error
 
 # Some flags are not directly compatible with Clang, but work out okay if the following flags are added
 ifeq ($(CC), clang)

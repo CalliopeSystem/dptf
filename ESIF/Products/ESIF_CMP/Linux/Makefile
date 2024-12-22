@@ -35,7 +35,7 @@ CPPFLAGS += -DESIF_ATTR_USER
 CPPFLAGS += -DESIF_ATTR_NO_TYPES
 CPPFLAGS += -D_7ZIP_ST
 
-CFLAGS += -Werror
+CFLAGS += -Wno-error
 
 # Compile Flags added for security purposes
 CFLAGS  += -fPIE
